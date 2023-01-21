@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+}
+
+section{
+    background-color: gray;
+}
+
+.navbar{
+
+}
