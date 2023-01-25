@@ -7,21 +7,96 @@
 </head>
 <body>
   <section class="navbar">
-    <div class="searchbar">SEARCHBAR</div>
-    <div class="userbar">USERBAR</div>
-    <div class="userinfo">USERINFO</div>
-    <div class="buttonbar">BUTTONBAR</div>
+    <div class="searchbar">
+      <label for="#">
+        <svg class="searchLogo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>magnify</title><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" fill="white"/></svg>
+      </label>
+      <input class="searchInput" type="text" id="#" name="#">
+    </div>
+    <div class="userbar">
+      <svg class="userBell" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M14,21A2,2 0 0,1 12,23A2,2 0 0,1 10,21M19.75,3.19L18.33,4.61C20.04,6.3 21,8.6 21,11H23C23,8.07 21.84,5.25 19.75,3.19M1,11H3C3,8.6 3.96,6.3 5.67,4.61L4.25,3.19C2.16,5.25 1,8.07 1,11Z" fill="white"/></svg>
+      <img class="userProfilePicture" src="Images/profilePicture.png" alt="account logo">
+      <p class="userName">Michael Blessings</p>
+    </div>
+    <div class="userinfo">
+      <img class="userProfilePicture" src="Images/profilePicture.png" alt="Profile picture">
+      <div>
+        <p>Welcome back,</p>
+        <p>Michael Blessings (@MiBless)</p></div>
+    </div>
+    <div class="buttonbar">
+      <button class="butBarButton">New</button>
+      <button class="butBarButton">Upload</button>
+      <button class="butBarButton">Share</button></div>
   </section>
 
   <section class="sidebar">
-    <div class="logo">LOGO</div>
-    <div class="parts">PARTS</div>
-    <div class="settings">SETTINGS</div>
+    <div class="logo">
+      <svg class="SVGLogo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z" fill="white"/></svg>
+      <p class="DashboardText">Dashboard</p>
+    </div>
+    <div class="parts">
+      <svg class="partLogo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16,8.41L11.5,3.91L4.41,11H6V12L6,19H9V13H14V19H17V11H18.59L17,9.41V6H16V8.41M2,12L11.5,2.5L15,6V5H18V9L21,12H18V20H13V14H10V20H5V12H2Z" fill="white"/></svg>
+      <p class="partText">Home</p>
+
+      <svg class="partLogo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.5,14C15.64,14 19,15.57 19,17.5V20H4V17.5C4,15.57 7.36,14 11.5,14M18,17.5C18,16.12 15.09,15 11.5,15C7.91,15 5,16.12 5,17.5V19H18V17.5M11.5,5C13.43,5 15,6.57 15,8.5C15,10.43 13.43,12 11.5,12C9.57,12 8,10.43 8,8.5C8,6.57 9.57,5 11.5,5M11.5,6C10.12,6 9,7.12 9,8.5C9,9.88 10.12,11 11.5,11C12.88,11 14,9.88 14,8.5C14,7.12 12.88,6 11.5,6Z" fill="white" /></svg>
+      <p class="partText">Profile</p>
+
+      <svg class="partLogo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,20.59L6.59,17H18C19.1,17 20,16.1 20,15V6C20,4.9 19.1,4 18,4H5C3.9,4 3,4.9 3,6V20.59M3,22H2V6C2,4.34 3.34,3 5,3H18C19.66,3 21,4.34 21,6V15C21,16.66 19.66,18 18,18H7L3,22Z" fill="white"/></svg>
+      <p class="partText">Messages</p>
+
+      <svg class="partLogo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.5,8H12V13L16.28,15.54L17,14.33L13.5,12.25V8M13,3A9,9 0 0,0 4,12H1L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3" fill="white"/></svg>
+      <p class="partText">History</p>
+
+      <svg class="partLogo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><<path d="M15,7H20.5L15,1.5V7M8,0H16L22,6V18A2,2 0 0,1 20,20H8C6.89,20 6,19.1 6,18V2A2,2 0 0,1 8,0M4,4V22H20V24H4A2,2 0 0,1 2,22V4H4Z" fill="white"/></svg>
+      <p class="partText">Tasks</p>
+
+      <svg class="partLogo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 17V19H2V17S2 13 9 13 16 17 16 17M12.5 7.5A3.5 3.5 0 1 0 9 11A3.5 3.5 0 0 0 12.5 7.5M15.94 13A5.32 5.32 0 0 1 18 17V19H22V17S22 13.37 15.94 13M15 4A3.39 3.39 0 0 0 13.07 4.59A5 5 0 0 1 13.07 10.41A3.39 3.39 0 0 0 15 11A3.5 3.5 0 0 0 15 4Z" fill="white"/></svg>
+      <p class="partText">Communities</p>
+    </div>
+    <div class="settings">
+
+      <svg class="settingsLogo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z" fill="white"/></svg>
+      <p class="settingsText">Settings</p>
+
+      <svg class="settingsLogo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11,18H13V16H11V18M12,6A4,4 0 0,0 8,10H10A2,2 0 0,1 12,8A2,2 0 0,1 14,10C14,12 11,11.75 11,15H13C13,12.75 16,12.5 16,10A4,4 0 0,0 12,6M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3Z" fill="white"/></svg>
+      <p class="settingsText">Support</p>
+
+      <svg class="settingsLogo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10,16L5,11L6.41,9.58L10,13.17L17.59,5.58L19,7M19,1H5C3.89,1 3,1.89 3,3V15.93C3,16.62 3.35,17.23 3.88,17.59L12,23L20.11,17.59C20.64,17.23 21,16.62 21,15.93V3C21,1.89 20.1,1 19,1Z" fill="white"/></svg>
+      <p class="settingsText">Privacy</p>
+    </div>
   </section>
 
   <section class="mainbar">
-    <div class="projects">PROJECTS</div>
-    <div class="announcements">ANNOUNCEMENTS</div>
+    <div class="projects"><p class="YourProjects">PROJECTS</p>
+      <div class="projectGrid">
+        <div class="projectInGrid">PROJECT</div>
+        <div class="projectInGrid">PROJECT</div>
+        <div class="projectInGrid">PROJECT</div>
+        <div class="projectInGrid">PROJECT</div>
+        <div class="projectInGrid">PROJECT</div>
+        <div class="projectInGrid">PROJECT</div>
+      </div>
+    </div>
+    <div class="announcements">
+      <p>Announcements</p>
+      <div class="announcBox">
+        <div class="announcementDIV">
+          <p>Site Maintenance</p>
+          <p>Lorem ipsum dolor sit amet. Somnis optio perferendis rerum sint sit?</p>
+        </div>
+        <div class="announcementDIV">
+          <p>Community Share Day</p>
+          <p>Lorem ipsum dolor sit amet. Somnis optio perferendis rerum sint sit?</p>
+        </div>
+        <div class="announcementDIV">
+          <p>Updated terms of use</p>
+          <p>Lorem ipsum dolor sit amet. Somnis optio perferendis rerum sint sit?</p>
+        </div>
+      </div>
+    </div>
     <div class="trending">TRENDING</div>
-  </section></body>
+  </section>
+</body>
 </html>
