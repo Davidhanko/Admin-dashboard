@@ -34,7 +34,8 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     background-color: var(--background-color-9);
-    box-shadow: 5px 5px 20px black;
+    box-shadow: 0 5px 10px 5px var(--background-color-4);
+    position: relative;
 }
 
 
@@ -115,6 +116,7 @@ body{
     display: grid;
     margin-top: -15px;
     grid-template-columns: 1fr 5fr;
+
 }
 
 .userinfo>.userProfilePicture{
@@ -140,6 +142,7 @@ body{
     justify-items: center;
     margin-right: 1vw;
     margin-top: 1vh;
+
 }
 
 .butBarButton{
@@ -147,6 +150,7 @@ body{
     background-color: var(--background-color-5);
     border-radius: 25px;
     border: none;
+
 }
 
 /*SIDE BAR*/
@@ -156,6 +160,7 @@ body{
     grid-row: 1/3;
     display: grid;
     grid-template-rows: 1fr 4fr 3fr;
+    position: relative;
 }
 
 .logo{
@@ -230,7 +235,7 @@ body{
     grid-column: 2/3;
     grid-row: 2/3;
     display: grid;
-    grid-template-rows: 2fr 2fr;
+    grid-template-rows: 2fr;
     grid-template-columns: 3fr 1fr;
 }
 
@@ -240,7 +245,6 @@ body{
 }
 
 .projectGrid{
-    margin-top: -50px;
     padding: 50px;
     display: grid;
     row-gap: 3vh;
@@ -253,10 +257,43 @@ body{
     background-color: white;
     width: clamp(100px, 25vw, 40vw);
     height: 150px;
+    border-radius: 20px;
+    display: grid;
+    border-left: 15px solid var(--background-color-5);
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 2fr 2fr 1fr;
+    box-shadow: 5px 0 5px 1px var(--background-color-4);
+
+}
+
+.projectInGrid>p{
+    color: black;
+    padding-left: 30px;
+}
+
+.projectInGrid>p:first-of-type{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.projectInGrid>p:nth-of-type(2){
+    grid-row: 2/3;
+}
+
+.projectInGrid>svg{
+    justify-self: center;
+    align-self: center;
+    grid-row: 3/4;
+    grid-column: 2/3;
+    margin-bottom: 20px;
 }
 
 .YourProjects{
-    margin-bottom: 50px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
 }
 
 
@@ -266,6 +303,7 @@ body{
 .announcements{
     background-color: var(--background-color-3);
     display: grid;
+    grid-column: 0/1;
 }
 
 .announcBox{
@@ -275,6 +313,17 @@ body{
     gap: 25px;
     padding: 25px;
     border-radius: 50px;
+    margin-bottom: 20vh;
+    box-shadow: 5px 0 10px 5px var(--background-color-4);
+}
+
+.announcementsPara{
+    justify-self: center;
+    align-self: center;
+    margin-right: 25px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
 }
 
 .announcementDIV{
@@ -294,13 +343,4 @@ body{
 .announcementDIV>p:first-of-type{
     font-weight: bold;
     font-size: 1rem;
-}
-
-
-/*TRENDING*/
-
-
-.trending{
-    background-color: brown;
-    grid-column: 2/3;
 }
